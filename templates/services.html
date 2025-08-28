@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <header>
+        <nav class="serv-nav">
+            <form action="/about">
+                <button class="btn-nav1" id="btn-nav1">Home</button>
+            </form>
+            <form action="/about">
+                <button class="btn-nav2">About</button>
+            </form>
+            <form action="/services">
+                <button class="btn-nav3">Services</button>
+            </form>
+            <form action="/about">
+                <button class="btn-nav4">Contact</button>
+            </form>
+            <form action="/booking">
+                <button class="btn-nav5">Book a session</button>
+            </form>
+        </nav>
+    </header>
+    <div class="main-text">
+        <img class="logo" src="{{ url_for('static', filename='Logotherpy.jpg') }}" alt="">
+        <h1>We help you when you need it the most</h1>
+    </div>
+    <p class="sub-text">Licensed therapists available for online in-person sessions</p>
+    <div class="booking">
+        <form action="/booking">
+            <button class="book-ses">Book your session !</button>
+        </form>
+        <p>Book a free consultation</p>
+    </div>
+    <div class="learn">
+        <p>Learn more about me <a href="base.html">here</a></p>
+    </div>
+    <h2 class="our">Our Therapist: </h2>
+    <div class="abt-ther">
+        <img class="logo" src="{{ url_for('static', filename='therapist.jpg') }}" alt="">
+        <div class="desc3">
+            <p>Dr.Mike professinal therapist since 2012</p>
+            <p>"Hi, I’m Dr. Mike Smith, a licensed therapist with 10+ years of experience helping adults and teens manage anxiety, depression, trauma, and life transitions."</p>
+        </div>
+    </div>
+    <div class="services">
+        <div class="indi">
+            <img class="indi-img" src="{{ url_for('static', filename='Individual.jpeg') }}" alt="">
+            <h3>🧠 Individual Therapy</h3>
+            <p>If you are suffering from anexity, depression, stress or even want us to help you with your personal growth then this one is for you.</p>
+        </div>
+        <div class="family">
+            <img class="family-img" src="{{ url_for('static', filename='Family.webp') }}" alt="">
+            <h3>👨‍👩‍👧 Family Therapy</h3>
+            <p>Helping families communicate and heal together.</p>
+        </div>
+        <div class="Teen">
+            <img class="teen-img" src="{{ url_for('static', filename='Teen.webp') }}" alt="">
+            <h3>💬 Teen & Adolescent Therapy</h3>
+            <p>Safe space for young people to open up.</p>
+        </div>
+        <div class="online">
+            <img class="online-img" src="{{ url_for('static', filename='Online.webp') }}" alt="">
+            <h3>🖥️ Online Therapy</h3>
+            <p>Accessible, confidential therapy from home.</p>
+        </div>
+    </div>
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

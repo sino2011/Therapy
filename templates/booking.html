@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="booking1">
+        <form action="/submit" method="POST">
+            <div class="f-nam">
+                <p>First Name: </p>
+                <input class="f-name" placeholder="First Name" id="f-name" name="f-name" type="text">
+            </div>
+            <div class="l-nam">
+                <p>Last Name: </p>
+                <input class="l-name" id="l-name" name="l-name" placeholder="Last Name" type="text">
+            </div>
+            <div class="mai">
+                <p>Email: </p>
+                <input class="mail" id="email" name="email" placeholder="Email" type="email">
+            </div>
+            <div class="pas">
+                <p>Password: </p>
+                <input class="pass" id="pass" name="pass" placeholder="Password" type="password">
+            </div>
+            <button type="submit">Submit</button>
+            <div class="return">
+                <form action="/services">
+                    <div class="back">
+                        <button class="back">Home</button>
+                    </div>
+                </form>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

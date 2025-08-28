@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div id="JS">
+        <nav>
+            <div class="nav">
+                <form action="/services">
+                    <button class="nav-serv">Services</button>
+                </form>
+                <form action="/about">
+                    <button class="about">About Us</button>
+                </form>
+                <form action="/booking">
+                    <button class="book">Book a session</button>
+                </form>
+            </div>
+        </nav>
+        <h1 class="he1" id="serv-btn1">Who are we ?</h1 >
+        <p class="desc">We are a therapist oragnization specializing in truama cases and depression</p>
+    
+        <div class="why-us-container">
+            <img class="img-left" src="{{ url_for('static', filename='woman-during-a-mental-therapy-session-with-a-psychotherapist-or-psychologist-two-women-are-sitting-and-talking-mental-health-concept-illustration-vector.jpg') }}" alt="">
+            <h2 class="he2">Why us ?</h2>
+        </div>
+        <p class="desc2" id="desc2">If you are looking for some of the most skilled therapist in Canda with more than 25+ years in experince then you have come to the right place</p>
+        <p class="serv">Click below to view all of our services</p>
+        <div class="ser-btn-container">
+            <form action="/services">
+                <button class="ser-btn" id="servbtn">Services</button>
+            </form>
+        </div>
+    </div>
+
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
